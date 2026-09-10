@@ -14,9 +14,15 @@ void Recargar(float &combustible, float litros) {
     std::cout << "Recarga realizada con exito (+ " << litros << " litros).\n";
 }
 
+void ConsultarCombustible(float combustible) {
+    std::cout << "Combustible actual: " << combustible << " litros.\n";
 int main() {
+  
+  std::cout <<"Sistema de gestion de combustible \n";
     float combustible = 50;
-
+  
+ std::cout << "=== PRUEBA CONSULTAR COMBUSTIBLE ===\n";
+    ConsultarCombustible(combustible);
     std::cout << "=== PRUEBA RECARGAR ===\n";
     std::cout << "Nivel inicial: " << combustible << " litros.\n";
 
@@ -28,5 +34,6 @@ int main() {
     Recargar(combustible, 30);
     std::cout << "Nivel actual: " << combustible << " litros.\n";
 
-    return 0;
+  
+  return 0;
 }
